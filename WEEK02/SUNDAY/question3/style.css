@@ -1,0 +1,53 @@
+.textboxinner {
+  height: 60px;
+  width: 60px;
+  background: transparent;
+  border: 5px solid black;
+}
+
+button {
+  background-color: rgb(0, 255, 106);
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(208, 255, 0);
+  color: white;
+  border: wheat 3px solid;
+}
+
+#Remove {
+  background-color: #39afd3;
+  padding: 10px 35px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#Remove:hover {
+  background-color: rgb(39, 197, 39);
+  color: white;
+}
+#textboxDiv {
+  display: flex;
+  flex-direction: column-reverse;
+  list-style: none;
+  align-items: center;
+}
+.list-item {
+  height: 40px;
+  width: 60px;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #000;
+}
+.personNameBox {
+  background-color: rgb(206, 171, 235);
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}
