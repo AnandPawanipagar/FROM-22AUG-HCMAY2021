@@ -1,0 +1,1 @@
+export let message="es6 modules";
