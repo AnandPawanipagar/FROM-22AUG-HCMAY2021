@@ -1,0 +1,10 @@
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e2d9d9;
+  border-radius: 74px;
+  position: fixed;
+  bottom: 10%;
+}
+/*# sourceMappingURL=ui_que1.css.map */
