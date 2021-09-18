@@ -1,8 +1,13 @@
-
 .card-body {
   display: flex;
   border: 1px solid rgb(226, 217, 217);
   border-radius: 74px;
   position: fixed;
   bottom: 10%;
+}
+
+#popup_content {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
 }

@@ -7,4 +7,11 @@
   position: fixed;
   bottom: 10%;
 }
+
+#popup_content {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
 /*# sourceMappingURL=ui_que1.css.map */
