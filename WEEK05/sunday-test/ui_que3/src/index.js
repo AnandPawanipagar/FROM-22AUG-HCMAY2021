@@ -1,5 +1,3 @@
-import "./styles.css";
-
 console.log(navigator.platform);
 const Win = `
 <h1>Question 3</h1>
@@ -20,36 +18,11 @@ const Android = `
 </div>
 `;
 if (navigator.platform.indexOf("Win") !== -1) {
-  document.getElementById("app").innerHTML =
-    Win +
-    " " +
-    navigator.platform +
-    " user Agent->" +
-    navigator.userAgent +
-    " appversion->" +
-    navigator.appVersion;
+  document.getElementById("app").innerHTML = Win;
 } else if (navigator.platform.indexOf("Mac") !== -1) {
-  document.getElementById("app").innerHTML =
-    Mac +
-    " " +
-    navigator.platform +
-    " user Agent->" +
-    navigator.userAgent +
-    " appversion->" +
-    navigator.appVersion;
+  document.getElementById("app").innerHTML = Mac;
 } else if (navigator.platform.indexOf("Android") !== -1) {
-  document.getElementById("app").innerHTML =
-    Android +
-    navigator.platform +
-    " user Agent->" +
-    navigator.userAgent +
-    " appversion->" +
-    navigator.appVersion;
+  document.getElementById("app").innerHTML = Android;
 } else {
-  document.getElementById("app").innerHTML =
-    `Other OS ${navigator.platform} ` +
-    " user Agent->" +
-    navigator.userAgent +
-    " appversion->" +
-    navigator.appVersion;
+  document.getElementById("app").innerHTML = `Other OS ${navigator.platform} `;
 }
