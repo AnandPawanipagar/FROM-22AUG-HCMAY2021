@@ -10,8 +10,10 @@ function closeBtn() {
   CloseModal.classList.add("invisible");
   document.getElementById("bgId").classList.remove("blur");
   document.getElementById("bgId").classList.remove("disableDiv");
+  document.getElementById("getStart").classList.add("first_button");
 }
 function bringForm() {
   let myForm = document.getElementById("myForm");
   myForm.classList.remove("invisible");
+  document.getElementById("getStart").classList.remove("first_button");
 }
