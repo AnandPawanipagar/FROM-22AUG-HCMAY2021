@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Que 2 Hicoder</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .bg {
+        height: 100vh;
+        background-image: url("../q2hicoderBG.jpeg");
+        background-size: cover;
+      }
+      .blur {
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(30px);
+      }
+      .disableDiv {
+        pointer-events: none;
+      }
+
+      .card {
+        box-shadow: 0px 0px 2px 2px lightgray;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        position: fixed;
+        top: 100px;
+        left: 200px;
+      }
+
+      .invisible {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      function check() {
+        console.log("Works");
+      }
+      setTimeout(() => {
+        document.getElementById("cardId").classList.remove("invisible");
+        document.getElementById("bgId").classList.add("blur");
+        document.getElementById("bgId").classList.add("disableDiv");
+      }, 3000);
+      function removeIfEnter(e) {
+        if (e.keyCode === 13) {
+          document.getElementById("cardId").classList.add("invisible");
+          document.getElementById("bgId").classList.remove("blur");
+          document.getElementById("bgId").classList.remove("disableDiv");
+        }
+      }
+    </script>
+
+    <div id="app">
+      <div id="bgId" class="bg">
+        <button id="btn" onclick="check()">ClickMe</button>
+      </div>
+      <div id="cardId" class="card invisible">
+        <input onkeyup="removeIfEnter(event)" />
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
